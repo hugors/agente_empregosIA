@@ -1,1 +1,217 @@
 
+Handoff para o Agent 2
+Carreira escolhida: Engenharia Back-end
+Disponibilidade: 10 horas por semana
+Experiência: Avançada, com bastante vivência em tecnologia
+Objetivo: Crescer na função atual
+Preferência: Trabalhar com código
+Interesse técnico: Desenvolvimento web
+Experiência complementar: Análise de dados
+Motivação: Resolver problemas
+
+Olá! Recebi suas informações do entrevistador.
+
+Vejo que você escolheu Engenheiro de IA e LLM e tem 10 horas por semana para estudar. Perfeito!
+
+Vou montar agora seu plano completo personalizado, considerando que você já possui alguma experiência, prefere código e busca crescimento profissional. Como você já trabalha com Python, APIs, Docker e infraestrutura, o foco será menos introdutório e mais direcionado a RAG, agentes, avaliação, observabilidade e implantação segura em Azure.
+
+A busca interna encontrou 7 reuniões relacionadas aos termos pesquisados, mas os resultados disponíveis não apresentaram material técnico suficiente para fundamentar esta trilha.
+
+🧩 VISÃO DO DIA A DIA
+
+Como é o trabalho de um(a) Engenheiro de IA e LLM:
+
+Desenvolver APIs e serviços que integram aplicações corporativas a modelos de linguagem.
+Construir pipelines RAG para conectar LLMs a documentos, bancos de dados, manuais e bases de conhecimento.
+Projetar agentes de IA capazes de utilizar ferramentas, APIs e fluxos controlados.
+Avaliar a qualidade das respostas, medindo relevância, fundamentação, latência, custo e ocorrência de alucinações.
+Implantar, monitorar e proteger aplicações de IA em ambientes Docker, cloud e pipelines de CI/CD.
+
+Na prática, você não passará o dia inteiro “treinando modelos”. Grande parte do trabalho será engenharia de software: APIs, integrações, tratamento de dados, segurança, testes, logs, controle de custos e observabilidade.
+
+🧠 MAPA DE SKILLS
+
+CORE SKILLS (essenciais):
+
+Engenharia de software para IA: Python avançado, programação assíncrona, tipagem, orientação a objetos, testes, arquitetura em camadas e APIs com FastAPI.
+Engenharia de LLM e RAG: prompting, embeddings, chunking, busca vetorial, busca híbrida, reranking, filtros por metadados, grounding e citações.
+Avaliação e produção: testes de qualidade, avaliação de recuperação e geração, tracing, métricas, segurança, custo, latência e observabilidade.
+
+NICE-TO-HAVE (complementares):
+
+Fundamentos de machine learning, NLP, transformers, tokenização, fine-tuning e modelos open source.
+Arquitetura cloud, Kubernetes, mensageria, Infrastructure as Code, MLOps e LLMOps.
+
+FERRAMENTAS E TECNOLOGIAS:
+
+Python, FastAPI, Pydantic, Pytest, Docker e GitHub Actions.
+Azure OpenAI, Azure AI Search, Azure Blob Storage, Azure Key Vault e Azure Monitor.
+LangChain, LangGraph ou Semantic Kernel, além de PostgreSQL com pgvector, Qdrant ou outro banco vetorial.
+
+📅 ROADMAP DE 90 DIAS
+
+ADAPTADO PARA: 10 horas/semana
+
+Distribuição sugerida:
+
+4 horas para estudo técnico.
+5 horas para implementação.
+1 hora para documentação, testes e publicação.
+Total planejado: aproximadamente 120 horas ao longo das 12 semanas.
+
+MÊS 1 - FUNDAMENTOS
+
+SEMANA 1-2:
+
+Revisar Python aplicado a serviços de IA: async/await, type hints, Pydantic, tratamento de exceções, logging estruturado e testes com Pytest.
+Criar uma API FastAPI com endpoints de health check, chat e configuração, incluindo validação de entrada, variáveis de ambiente e documentação OpenAPI.
+Revisar conceitos de LLM: tokens, janela de contexto, temperatura, mensagens de sistema, structured output e limites de modelos.
+Implementar uma abstração de provedor para permitir troca entre Azure OpenAI, outro serviço de API e um adaptador simulado para testes.
+
+SEMANA 3-4:
+
+Estudar embeddings, similaridade vetorial, chunking, overlap, metadados, top-k e diferenças entre busca semântica, textual e híbrida.
+Criar o primeiro pipeline RAG: ingestão de documentos, extração de texto, divisão em chunks, geração de embeddings, indexação e recuperação.
+Exigir que cada resposta apresente as fontes utilizadas e informe claramente quando a base não possui evidências suficientes.
+Criar testes para perguntas respondíveis, não respondíveis, ambíguas e potencialmente maliciosas.
+
+MÊS 2 - PRÁTICA
+
+SEMANA 5-6:
+
+Evoluir o RAG com busca híbrida, filtros de metadados, deduplicação, reranking e montagem controlada do contexto.
+Comparar estratégias de chunking e registrar os resultados em um pequeno relatório técnico.
+Criar um conjunto de avaliação com perguntas, respostas esperadas e documentos relevantes.
+Medir separadamente a qualidade da recuperação e a qualidade da resposta final, evitando avaliar o sistema apenas pela fluidez do texto.
+
+SEMANA 7-8:
+
+Estudar agentes: ferramentas, estado, memória, roteamento, ciclos, limites de execução, human-in-the-loop e tratamento de falhas.
+Criar um agente com ferramentas restritas, por exemplo: consultar base documental, verificar status de serviço e abrir uma solicitação simulada.
+Adicionar timeout, número máximo de passos, validação dos argumentos das ferramentas e trilha de auditoria.
+Containerizar API, worker e banco, mantendo ambientes de desenvolvimento e produção separados, sem usar dados ou integrações reais durante os testes.
+
+MÊS 3 - PORTFÓLIO E PREPARAÇÃO
+
+SEMANA 9-10:
+
+Implantar a solução em Azure, armazenando segredos em serviço apropriado e evitando credenciais dentro do código ou da imagem Docker.
+Adicionar logs estruturados, correlation ID, métricas de latência, tokens, custo estimado, falhas de recuperação e respostas sem evidência.
+Implementar CI/CD com lint, testes unitários, testes de integração, análise de dependências, build da imagem e validação antes do deploy.
+Criar testes de segurança para prompt injection, tentativa de extração do prompt de sistema, documentos contaminados e acesso indevido entre usuários.
+
+SEMANA 11-12:
+
+Finalizar README, documentação de arquitetura, instruções de execução, decisões técnicas, limitações e demonstração do projeto.
+Gravar uma demonstração curta baseada em storytelling: problema, risco, arquitetura, execução, observabilidade e resultado.
+Preparar respostas de entrevista usando situações reais dos seus projetos, especialmente APIs, Docker, integrações, troubleshooting, segurança e auditoria.
+Publicar um estudo de caso no GitHub e no LinkedIn, destacando decisões de engenharia e não apenas telas do sistema.
+
+Conteúdo extra para crescimento:
+
+Estudar GraphRAG, RAG multimodal, cache semântico, model routing, guardrails e avaliação contínua.
+Comparar agente autônomo com workflow determinístico e documentar quando não usar um agente.
+Preparar uma evolução futura para Kubernetes, filas e processamento assíncrono, sem aumentar a infraestrutura antes da necessidade.
+
+🚀 PROJETO DE PORTFÓLIO
+
+PROJETO: NOC Copilot RAG – Assistente Inteligente de Operações
+
+O QUE FAZER:
+
+Desenvolver um assistente de IA para apoiar analistas na consulta de procedimentos, runbooks, incidentes fictícios e documentação técnica.
+
+A aplicação terá uma API em FastAPI, pipeline RAG, banco vetorial e um agente controlado. O usuário poderá fazer perguntas operacionais e receber respostas fundamentadas nos documentos indexados, com indicação das fontes utilizadas.
+
+O agente poderá utilizar ferramentas seguras para:
+
+Consultar a base de procedimentos.
+Verificar o status simulado de um serviço.
+Gerar um plano de diagnóstico.
+Produzir o rascunho de uma solicitação de suporte.
+Encaminhar uma ação sensível para aprovação humana.
+
+Use somente documentos públicos, anonimizados ou criados especificamente para demonstração. Não coloque runbooks internos, dados pessoais, endereços de infraestrutura, credenciais ou informações corporativas reais no repositório.
+
+ENTREGÁVEIS:
+
+Repositório GitHub com API FastAPI, pipeline de ingestão, RAG, agente, Docker Compose, testes e CI/CD.
+README profissional com arquitetura, modelo de ameaças, instruções de execução, decisões técnicas e exemplos de uso.
+Dashboard ou relatório de avaliação com métricas de recuperação, respostas fundamentadas, latência, erros e custo estimado.
+
+CRITÉRIOS DE ACEITAÇÃO:
+
+Toda resposta factual deve apresentar a fonte recuperada ou declarar que não encontrou evidência suficiente.
+O pipeline deve possuir testes automatizados para recuperação, autorização, prompt injection, indisponibilidade do modelo e falha de ferramenta.
+A aplicação deve executar de modo reproduzível em contêineres, sem segredos no repositório e com logs auditáveis por requisição.
+
+DICA: Comece com uma versão vertical mínima: cinco documentos fictícios, vinte perguntas de avaliação, um endpoint de chat e uma única ferramenta. Depois acrescente busca híbrida, reranking, agente e Azure. Isso impede que a complexidade de infraestrutura esconda a qualidade real do RAG.
+
+💬 ROTEIRO DE ENTREVISTAS
+
+PERGUNTA 1: Como funciona uma arquitetura RAG?
+
+COMO RESPONDER:
+
+“RAG combina recuperação de informação e geração. Primeiro, os documentos são processados, divididos em chunks, enriquecidos com metadados, transformados em embeddings e indexados. Na consulta, recuperamos os trechos mais relevantes e montamos um contexto controlado para o LLM. A resposta deve ser fundamentada nesse contexto e apresentar as fontes. Eu avalio o retriever e o gerador separadamente, porque uma resposta ruim pode ser causada por recuperação inadequada ou por utilização incorreta de um contexto que estava correto.”
+
+PERGUNTA 2: Como você reduziria alucinações em uma aplicação com LLM?
+
+COMO RESPONDER:
+
+“Eu não trataria alucinação apenas com um prompt mais rígido. Melhoraria a qualidade e a cobertura da base, ajustaria chunking e recuperação, usaria reranking e instruiria o modelo a responder somente com evidências. Também exigiria citações, criaria uma saída explícita para informação insuficiente e manteria um conjunto de avaliação. Em fluxos sensíveis, adicionaria validação determinística e aprovação humana.”
+
+PERGUNTA 3: Quando usar um agente e quando usar um fluxo tradicional?
+
+COMO RESPONDER:
+
+“Uso um workflow determinístico quando as etapas e regras são conhecidas, porque ele é mais previsível, testável e auditável. Considero um agente quando há necessidade real de selecionar ferramentas ou adaptar a sequência de ações com base no contexto. Mesmo assim, limito as ferramentas disponíveis, o número de passos, o tempo de execução e as permissões. Ações que produzem impacto devem exigir confirmação ou aprovação humana.”
+
+PERGUNTA 4: Como você colocaria uma aplicação de LLM em produção?
+
+COMO RESPONDER:
+
+“Eu separaria API, ingestão e processamento assíncrono, containerizaria os componentes e armazenaria segredos fora do código. O pipeline de entrega executaria lint, testes, análise de dependências e validações antes da implantação. Em produção, acompanharia latência, tokens, custo, erros, qualidade da recuperação e respostas sem evidência. Também manteria versionamento de prompts, modelos, índices e conjuntos de avaliação para detectar regressões.”
+
+PERGUNTA 5: Conte sobre um desafio técnico relevante.
+
+COMO RESPONDER:
+
+Use o modelo STAR:
+
+“Situação: Eu precisava integrar componentes distribuídos em um ambiente com requisitos operacionais e de segurança.
+
+Tarefa: Minha responsabilidade era identificar a origem da falha e entregar uma solução observável e segura.
+
+Ação: Separei o problema por camadas, validei rede, aplicação, credenciais e persistência, adicionei logging correlacionado e reproduzi o cenário fora da produção. Depois automatizei os testes necessários para evitar regressão.
+
+Resultado: A solução ficou mais previsível, auditável e fácil de manter. Esse aprendizado se aplica diretamente a sistemas de IA, nos quais também precisamos separar falhas do modelo, do retriever, das ferramentas e da infraestrutura.”
+
+Na entrevista, substitua o resultado genérico por um resultado real e verificável do seu projeto. Não invente porcentagens ou números.
+
+🎓 TRILHA DIO RECOMENDADA
+
+TRILHA: Microsoft AI for Tech – OpenAI Services
+
+POR QUE ESSA TRILHA:
+
+É a opção mais alinhada ao seu objetivo porque aborda integração dos serviços OpenAI no Azure, aplicações com API, chatbots, engenharia de prompts, contexto de busca e criação de agentes integrados a soluções cloud e microsserviços. A página da DIO também apresenta atividades práticas e posiciona a trilha para profissionais de cloud que desejam incorporar IA às suas soluções.
+
+Como você já possui experiência, utilize a trilha como eixo de Azure OpenAI e complemente com o projeto proposto neste roadmap. O bootcamp, sozinho, não cobre todo o aprofundamento necessário em avaliação de RAG, segurança, observabilidade e engenharia de produção.
+
+Trilha complementar: depois da primeira, o Microsoft Certification Challenge #4 – AI-102 pode fortalecer a parte de projeto e implementação de soluções de IA no Azure. A página encontrada inclui módulos de IA generativa com Azure OpenAI, processamento de linguagem natural, mineração de conhecimento e preparação para o AI-102.
+
+PRÓXIMOS PASSOS:
+
+Acesse a plataforma DIO.
+Busque por “Microsoft AI for Tech – OpenAI Services”.
+Verifique na página se a matrícula continua disponível.
+Inscreva-se gratuitamente, caso a oferta esteja aberta.
+Siga o cronograma junto com este roadmap.
+Use cada módulo estudado para produzir uma entrega concreta do NOC Copilot RAG.
+
+✨ Seu plano está pronto!
+
+Lembre-se: o mais importante é a constância, não a velocidade. Comece pela Semana 1 e vá no seu ritmo.
+
+No seu caso, o maior salto profissional não virá de acumular mais uma lista de frameworks. Ele virá de demonstrar que você consegue construir uma solução de IA segura, testável, observável, containerizada e preparada para produção.
